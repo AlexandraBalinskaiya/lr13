@@ -1,0 +1,39 @@
+body {
+     background-image: url("bg.jpg");
+}
+
+.upper-section {
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    animation: pulse 2s infinite;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #4a148c;
+    color: #fff;
+    text-decoration: none;
+    animation: none;
+}
+
+.display-4 {
+    color: #6a11cb;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
