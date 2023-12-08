@@ -1,39 +1,89 @@
-body {
-     background-image: url("bg.jpg");
-}
+ body {
+            font-family: Arial, sans-serif;
+            background-image: url("bg2.jpg");
+        }
 
-.upper-section {
-    background-image: url("bg2.jpg");
-    background-size: cover;
-    background-position: center;
-}
+        .container-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-.btn-primary {
-    background-color: #6a11cb;
-    border: none;
-    animation: pulse 2s infinite;
-}
+        .block {
+            min-height: 400px;
+			max-width: 350px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #4a148c;
-    color: #fff;
-    text-decoration: none;
-    animation: none;
-}
+        .block:hover {
+            transform: scale(1.05);
+        }
 
-.display-4 {
-    color: #6a11cb;
-}
+        .block img {
+            width: 280px;
+            height: 350px;
+            border-radius: 5%;
+            object-fit: cover;
+        }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+        .block h3 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .block p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .block a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .block a:hover {
+            background-color: #0056b3;
+        }
+		header {
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        footer {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container-center {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .block {
+                width: 100%;
+                margin: 10px;
+                max-width: 300px;
+            }
+
+            .block img {
+                width: 100%;
+                height: auto;
+            }
+        }
